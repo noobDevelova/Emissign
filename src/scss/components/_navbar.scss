@@ -1,0 +1,75 @@
+@use "../base/" as *;
+@use "../components/button";
+
+header {
+  position: relative;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background-color: #ffffff;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo > img {
+      width: 80%;
+    }
+
+    .navigation-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .nav-list {
+      display: flex;
+      gap: 2rem;
+      padding: 0.62rem 1.8rem;
+      align-items: center;
+
+      .nav-item {
+        color: $font-black;
+        @include font-style(lg, medium, lg, "text");
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  nav {
+    .navigation-container {
+      flex-direction: column;
+      background-color: #ffffff;
+      padding-block: 1rem;
+    }
+
+    .navigation {
+      transform: translateY(-400px);
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 100%;
+
+      background-color: #ffffff;
+      transition: 0.3s ease;
+
+      .nav-list {
+        flex-direction: column;
+        justify-content: center;
+        padding-block: 1.5rem;
+      }
+    }
+
+    .active {
+      transform: translateY(0px);
+      transition: 0.3s ease;
+    }
+    .btn-menu {
+      display: block;
+      z-index: 9999;
+    }
+  }
+}

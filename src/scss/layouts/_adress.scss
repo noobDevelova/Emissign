@@ -1,0 +1,60 @@
+@use "../base/" as *;
+
+#input-field {
+  margin-block: 2rem;
+  padding-block: 3.75rem;
+
+  h1.section-header {
+    @include font-style(xs, bold, xs, "heading");
+    color: $secondary;
+    margin-bottom: 1.88rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: start;
+  }
+
+  input[type="text"] {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08),
+      0px 0px 6px 0px rgba(0, 0, 0, 0.02);
+    border-radius: 0.5rem;
+    border: 1px solid #d0d5dd;
+    padding: 0.75rem 1rem;
+    width: 24.5rem;
+  }
+
+  #inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.81rem;
+    align-items: start;
+
+    .input-wrapper {
+      display: flex;
+      gap: 1.25rem;
+
+      button {
+        cursor: pointer;
+        align-self: center;
+        padding: 0.62rem;
+        background-color: #fff;
+        border: 1px solid $secondary;
+        display: flex;
+        border-radius: 100px;
+
+        img {
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .input-asal {
+    display: flex;
+    flex-direction: column;
+    gap: 0.81rem;
+  }
+}

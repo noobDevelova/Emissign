@@ -1,0 +1,137 @@
+@use "../base/" as *;
+
+#result {
+  margin-block: 6rem;
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "one two two"
+      "one three three"
+      "one three three"
+      "one three three"
+      "one three three"
+      "one three three"
+      "one three three"
+      "one three three"
+      "one three three"
+      "one three three"
+      "one three three"
+      "one three three"
+      "one three three";
+    gap: 2.44rem;
+
+    .grid-item:nth-child(1) {
+      grid-area: one;
+    }
+    .grid-item:nth-child(2) {
+      grid-area: two;
+    }
+    .grid-item:nth-child(3) {
+      grid-area: three;
+    }
+    .route-details {
+      background-color: #f9fafb;
+      padding: 1.5rem 1.69rem;
+      border-radius: 1.875rem;
+
+      h1.text-header {
+        color: $secondary;
+        padding-inline: 0.31rem;
+        @include font-style(xl, bold, xl, "text");
+      }
+
+      p.distance {
+        @include font-style(xs, regular, xs, "text");
+        color: $font-gray;
+      }
+
+      p.text-sub-header {
+        @include font-style(lg, semibold, lg, "text");
+        color: $secondary;
+      }
+      .main-destination {
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+
+        .route-distance {
+          background-color: $secondary;
+          padding: 0.5rem 0.62rem;
+          display: flex;
+          align-items: center;
+          border-radius: 62.4375rem;
+
+          p {
+            @include font-style(xs, regular, xs, "text");
+            color: #fff;
+          }
+        }
+
+        p.destination {
+          @include font-style(md, semibold, md, "text");
+        }
+      }
+
+      .sub-destination {
+        display: flex;
+        flex-direction: column;
+        gap: 0.38rem;
+
+        p.destination {
+          @include font-style(sm, regular, sm, "text");
+        }
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.81rem;
+        padding-block: 1.25rem 1.28rem;
+        padding-inline: 0.31rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #d0d5dd;
+        }
+      }
+    }
+
+    .emmision-result {
+      background-color: #f9fafb;
+      padding: 1.5rem 2rem;
+      border-radius: 1.875rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.81rem;
+
+      h1.text-header {
+        @include font-style(xl, bold, xl, "text");
+        color: $secondary;
+      }
+
+      p.vehicle-type,
+      span {
+        @include font-style(xs, medium, xs, "text");
+      }
+
+      p.vehicle-type > span {
+        color: $font-gray;
+      }
+
+      h1.carbon-result {
+        @extend .text-header;
+        margin-top: 0.4rem;
+      }
+    }
+
+    .map-container {
+      border-radius: 1.875rem;
+      overflow: hidden;
+
+      #map {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

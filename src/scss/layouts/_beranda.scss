@@ -1,0 +1,198 @@
+@use "../components/navbar";
+@use "../components/footer";
+@use "../base/" as *;
+
+// Hero Section
+#hero {
+  position: relative;
+  margin-block: 5rem;
+
+  .img-branch {
+    position: absolute;
+  }
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      align-items: self-start;
+      gap: 1.25rem;
+      max-width: 43.25rem;
+
+      h1.content-header {
+        @include font-style(xl, bold, xl, "heading");
+        color: $secondary;
+      }
+
+      p.content-text {
+        @include font-style(lg, regular, lg, "text");
+        color: $font-gray;
+      }
+    }
+    .image-content {
+      position: relative;
+      top: 70px;
+    }
+  }
+}
+
+// CALCULATE SECTION
+#kalkulator {
+  padding-block: 5.97rem;
+
+  .description-container {
+    display: flex;
+    align-items: center;
+
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.81rem;
+
+      p.content-sub-text {
+        color: #3d5656;
+        @include font-style(xs, medium, xs, "heading");
+      }
+
+      h1.content-header {
+        color: $secondary;
+        @include font-style(md, bold, md, "heading");
+      }
+
+      p.content-text {
+        color: #475467;
+        @include font-style(md, regular, md, "text");
+        max-width: 40rem;
+      }
+
+      .btn-secondary {
+        align-self: self-start;
+      }
+    }
+  }
+}
+
+// SECTION DAMPAK
+#dampak {
+  padding-block: 3.75rem;
+
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+
+    .section-header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      max-width: 45.625rem;
+      align-self: center;
+      gap: 0.81rem;
+
+      p.content-sub-header {
+        color: #3d5656;
+        @include font-style(xs, medium, xs, "heading");
+      }
+
+      h1.content-header {
+        color: $secondary;
+        @include font-style(md, bold, md, "heading");
+      }
+    }
+
+    .cards-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+
+      .flex-basis {
+        display: flex;
+        gap: 12.5rem;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        background-color: #f9fafb;
+        padding: 1.88rem 2.12rem 1.88rem 2.19rem;
+        border-radius: 1.875rem;
+
+        .card-header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 0.81rem;
+
+          .header-text {
+            color: #101828;
+            @include font-style(xl, bold, xl, "text");
+          }
+        }
+
+        .card-content > p {
+          color: #667085;
+          @include font-style(sm, medium, sm, "text");
+        }
+      }
+      .second {
+        grid-area: second;
+        height: 95%;
+      }
+      .fourth {
+        grid-area: fourth;
+        height: 95%;
+      }
+
+      .tree-branch {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    .hero-container {
+      padding-top: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .text-content {
+        text-align: center;
+
+        .btn-secondary {
+          align-self: center;
+        }
+      }
+
+      .image-container {
+        position: relative;
+        top: 0;
+      }
+    }
+  }
+
+  #kalkulator {
+    .description-container {
+      flex-direction: column;
+      padding-top: 30px;
+
+      .text-content {
+        text-align: center;
+        justify-content: center;
+
+        .btn-secondary {
+          align-self: center;
+        }
+      }
+    }
+  }
+}

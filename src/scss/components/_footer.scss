@@ -1,0 +1,25 @@
+@use "../base//" as *;
+
+footer {
+  background-color: #3d5656;
+  margin-top: auto;
+
+  .footer-inner {
+    padding: 1.37rem 0 2.69rem 0;
+
+    p.footer-text {
+      max-width: 30rem;
+      @include font-style(md, medium, md, "text");
+      color: $font-white;
+    }
+    .link-wrapper {
+      align-self: flex-end;
+    }
+  }
+
+  .flex-reverse {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}

@@ -1,0 +1,19 @@
+@forward "./mixins";
+@forward "./reset";
+@forward "./variables";
+
+.container {
+  max-width: 1200px;
+  width: calc(100% - 7rem);
+  margin-inline: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}

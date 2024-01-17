@@ -1,0 +1,16 @@
+@use "./layouts/beranda";
+@use "./layouts/transport";
+@use "./layouts/adress";
+@use "./layouts/result";
+@use "./base/" as *;
+
+body,
+html {
+  font-family: $inter;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

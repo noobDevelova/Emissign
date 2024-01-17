@@ -1,0 +1,52 @@
+@use "../base/" as *;
+
+.btn-master {
+  padding: 0.5rem 1.875rem;
+  border-radius: 62.4375rem;
+  @include font-style(lg, bold, lg, "text");
+}
+
+.btn-primary {
+  @extend .btn-master;
+  border: 1px solid $secondary;
+  color: $secondary;
+}
+.btn-secondary {
+  @extend .btn-master;
+  color: $font-white;
+  background-color: $secondary;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-menu {
+  display: none;
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    span {
+      width: 30px;
+      height: 2px;
+      background-color: $secondary;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    &.active {
+      span:nth-child(1) {
+        transform: rotate(45deg) translateX(5px);
+      }
+
+      span:nth-child(2) {
+        display: none;
+      }
+
+      span:nth-child(3) {
+        transform: rotate(-45deg) translateX(5px);
+      }
+    }
+  }
+}

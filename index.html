@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <title>Emissign</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="./src/assets/img/logo.svg" alt="logo" />
+          </div>
+
+          <div class="navigation">
+            <div class="navigation-container">
+              <div class="nav-list">
+                <a href="#" class="nav-item">Beranda</a>
+                <a href="#" class="nav-item">Kalkulator</a>
+                <a href="#" class="nav-item">Tentang Kami</a>
+              </div>
+              <div>
+                <a href="#" class="btn-primary">Kontak</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-menu">
+            <div class="hamburger" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="container">
+        <div class="hero-container">
+          <div class="text-content">
+            <h1 class="content-header">Tinjau Emisi Anda!</h1>
+            <p class="content-text">
+              Temukan Seberapa Ramah Lingkungan Kendaraan Anda Dengan <br />
+              Kalkulator Emisi yang Mudah Digunakan!
+            </p>
+            <a href="./pages/transport.html" class="btn-secondary"
+              >Hitung Emisi Karbon Kamu</a
+            >
+          </div>
+          <div class="image-content">
+            <img src="./src/assets/img/car.svg" alt="" class="hero-img" />
+          </div>
+        </div>
+      </div>
+      <img src="./src/assets/img/tree_branch.svg" alt="" class="img-branch" />
+    </section>
+
+    <section id="kalkulator">
+      <div class="container">
+        <div class="description-container">
+          <div class="text-content">
+            <p class="content-sub-text">Kalkulator</p>
+            <h1 class="content-header">Ayo Cek Emisi Karbon Kamu Sekarang!</h1>
+            <p class="content-text">
+              Sekarang, Anda dapat dengan mudah menentukan jejak karbon
+              kendaraan Anda dalam hitungan detik. Cukup tekan tombol "Hitung
+              Emisi Saya" di bawah ini, dan kita akan membimbing Anda melalui
+              proses yang ramah pengguna untuk memberikan informasi yang akurat
+              dan berguna. Mari bersama-sama berkontribusi pada perubahan
+              positif, mulai dari setiap perjalanan kendaraan Anda.
+            </p>
+            <a href="./pages/transport.html" class="btn-secondary"
+              >Hitung Emisi Saya</a
+            >
+          </div>
+          <img src="./src/assets/img/calculator.svg" alt="calc_img" />
+        </div>
+      </div>
+    </section>
+
+    <section id="dampak">
+      <div class="container">
+        <div class="section-container">
+          <div class="section-header">
+            <p class="content-sub-header">Mengapa Begitu Penting?</p>
+            <h1 class="content-header">
+              4 Dampak Baik Mengurangi Emisi Karbon KamuUntuk Dunia Yang Lebih
+              Baik
+            </h1>
+          </div>
+
+          <div class="cards-container">
+            <div class="flex-basis">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./src/assets/img/earth.svg" alt="" />
+                  <p class="header-text">Pemanasan Global</p>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Konsentrasi gas karbondioksida yang terlepas ke udara, akan
+                    mengakibatkan terperangkapnya panas di atmosfir bumi. Hal
+                    ini dikarenakan, gas karbondioksida akan menyerap panas dan
+                    radiasi sinar matahari dari permukaan bumi. akibatnya energi
+                    panas akan terperangkap diatmosfir dan tidak dapat
+                    keluar/terpantul kembali. Terperangkapnya energi panas ini
+                    akan mengakibatkan perubahan suhu dipermukaan bumi yang
+                    akhirnya dirasakan oleh manusia bahwa udara luar semakin
+                    panas dibandingkan tahun-tahun sebelumnya. Artinya,
+                    mengurangi emisi aktivitas kita adalah kontribusi untuk
+                    mencegah pemanasan global.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card second">
+                <div class="card-header">
+                  <img src="./src/assets/img/forest_fire.svg" alt="" />
+                  <p class="header-text">Bencana Alam</p>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Bencana alam hidrometeorologi atau bencana alam yang
+                    diakibatkan oleh fenomena anomali diatmosfir adalah bencana
+                    yang umum terjadi akibat pemanasan global. Sebut saja,
+                    banjir, tanah longsor, kekeringan, naiknya pasang air laut
+                    dan angin topan adalah bencana alam yang akan terjadi jika
+                    pemanasan global terus terjadi. Hal ini berkaitan dengan
+                    iklim dan cuaca yang ditentukan oleh kondisi atmosifr bumi.
+                    Sehingga semakin terganggu kondisi atmosfir bumi oleh
+                    polutan gas rumah kaca seperti karbondioksida, akan semakin
+                    sering dan parah juga bencana yang terjadi diwaktu yang akan
+                    datang.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <img
+              src="/src/assets/img/tree_branch.svg"
+              alt=""
+              class="tree-branch"
+            /> -->
+            <div class="flex-basis">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./src/assets/img/splash.svg" alt="" />
+                  <p class="header-text">Ketersediaan Air</p>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Emisi dari aktivitas manusia berupa gas karbondioksida yang
+                    berlebihan akan memicu terjadinya pemanasan global dan lebih
+                    ekstrem lagi adalah perubahan iklim. Hal ini lah yang
+                    mengakibatkan akhir-akhir ini kita merasakan kekeringan yang
+                    berkepanjangan atau hujan lebat yang mengakibatkan banjir
+                    dan tanah longsor. Jika tidak dikendalikan, ketahanan air
+                    bersih kita akan terganggu. Sehingga dengan mengurangi
+                    emisi, kita juga berperan dalam mempertahankan ketersediaan
+                    air bersih untuk kehidupan kita manusia di waktu yang akan
+                    datang
+                  </p>
+                </div>
+              </div>
+
+              <div class="card fourth">
+                <div class="card-header">
+                  <img src="./src/assets/img/heartbeat.svg" alt="" />
+                  <p class="header-text">Isu Kesehatan</p>
+                </div>
+                <div class="card-content">
+                  <p>
+                    Jika emisi terus meningkat, makhluk hidup yang paling
+                    terdampak adalah manusia. Manusia akan terpapar oleh
+                    polutannya sendiri seperti asap kendaraan bermotor, asap
+                    PLTU, debu bahkan banjir. Dengan begitu, manusia tidak akan
+                    lagi menghirup udara segar dan mendapatkan asupan oksigen
+                    cukup, yang akhirnya berdampak pada kesehatan paru-paru,
+                    jantung dan bahkan otak dan mental manusia. Dengan
+                    mengurangi emisi, kita akan berkontribusi untuk menurunkan
+                    potensi penyakit akibat polusi udara seperti ISPA.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <img src="./src/assets/img/logo.svg" alt="" />
+        <div class="footer-inner flex-reverse">
+          <p class="footer-text">
+            Menghitung Jejak Karbon akan membantu individu dan kelompok untuk
+            mengetahui seberapa besar produksi emisi karbon yang dihasilkan pada
+            satu waktu periode tertentu. Untuk melakukan perhitungan tersebut,
+            alat bantu seperti kalkulator Jejak Karbon diperlukan.
+          </p>
+          <div class="link-wrapper">
+            <a href=""><img src="./src/assets/icon/fb_logo.svg" alt="" /></a>
+            <a href=""><img src="./src/assets/icon/ig_logo.svg" alt="" /></a>
+            <a href=""
+              ><img src="./src/assets/icon/twitter_logo.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

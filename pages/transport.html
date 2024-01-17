@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <title>Emissign</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="./src/assets/img/logo.svg" alt="logo" />
+          </div>
+
+          <div class="navigation">
+            <div class="navigation-container">
+              <div class="nav-list">
+                <a href="#" class="nav-item">Beranda</a>
+                <a href="#" class="nav-item">Kalkulator</a>
+                <a href="#" class="nav-item">Tentang Kami</a>
+              </div>
+              <div>
+                <a href="#" class="btn-primary">Kontak</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-menu">
+            <div class="hamburger" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="index-field">
+      <div class="container">
+        <h1 class="section-header">Hitung dan Kurangi Emisi Anda!</h1>
+
+        <div class="wrapper">
+          <p>Pilih Jenis Bahan Bakar Anda</p>
+          <div class="input-btn-wrapper">
+            <div class="input-btn">
+              <img src="./src/assets/icon/gas_pump.svg" alt="" />
+              <label for="ron90">Ron 90</label>
+              <input type="radio" name="ronType" id="ron90" value="RON 90" />
+            </div>
+            <div class="input-btn">
+              <img src="./src/assets/icon/gas_pump.svg" alt="" />
+              <label for="ron92">Ron 92</label>
+              <input type="radio" name="ronType" id="ron92" value="RON 92" />
+            </div>
+            <div class="input-btn">
+              <img src="./src/assets/icon/gas_pump.svg" alt="" />
+              <label for="ron95">Ron 95</label>
+              <input type="radio" name="ronType" id="ron95" value="RON 95" />
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn-secondary" id="nextBtn">
+          Selanjutnya
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <img src="./src/assets/img/logo.svg" alt="" />
+        <div class="footer-inner flex-reverse">
+          <p class="footer-text">
+            Menghitung Jejak Karbon akan membantu individu dan kelompok untuk
+            mengetahui seberapa besar produksi emisi karbon yang dihasilkan pada
+            satu waktu periode tertentu. Untuk melakukan perhitungan tersebut,
+            alat bantu seperti kalkulator Jejak Karbon diperlukan.
+          </p>
+          <div class="link-wrapper">
+            <a href=""><img src="./src/assets/icon/fb_logo.svg" alt="" /></a>
+            <a href=""><img src="./src/assets/icon/ig_logo.svg" alt="" /></a>
+            <a href=""
+              ><img src="./src/assets/icon/twitter_logo.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

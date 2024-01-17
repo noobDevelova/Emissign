@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emissign | Route</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <!-- Leaflet JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="./src/assets/img/logo.svg" alt="logo" />
+          </div>
+
+          <div class="navigation">
+            <div class="navigation-container">
+              <div class="nav-list">
+                <a href="#" class="nav-item">Beranda</a>
+                <a href="#" class="nav-item">Kalkulator</a>
+                <a href="#" class="nav-item">Tentang Kami</a>
+              </div>
+              <div>
+                <a href="#" class="btn-primary">Kontak</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-menu">
+            <div class="hamburger" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="result">
+      <div class="container">
+        <div class="grid-container">
+          <div class="grid-item route-details">
+            <h1 class="text-header">Detail Rute</h1>
+            <div class="wrapper" id="main-destination">
+              <p class="text-sub-header">Dari</p>
+            </div>
+            <div class="wrapper" id="sub-destination">
+              <p class="text-sub-header">Tujuan</p>
+            </div>
+          </div>
+          <div class="grid-item emmision-result">
+            <h1 class="text-header">Jejak Karbon</h1>
+            <p class="vehicle-type"><span>Tipe:</span> Kendaraan</p>
+            <h1 class="carbon-result"></h1>
+          </div>
+          <div class="grid-item map-container">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <img src="./src/assets/img/logo.svg" alt="" />
+        <div class="footer-inner flex-reverse">
+          <p class="footer-text">
+            Menghitung Jejak Karbon akan membantu individu dan kelompok untuk
+            mengetahui seberapa besar produksi emisi karbon yang dihasilkan pada
+            satu waktu periode tertentu. Untuk melakukan perhitungan tersebut,
+            alat bantu seperti kalkulator Jejak Karbon diperlukan.
+          </p>
+          <div class="link-wrapper">
+            <a href=""><img src="./src/assets/icon/fb_logo.svg" alt="" /></a>
+            <a href=""><img src="./src/assets/icon/ig_logo.svg" alt="" /></a>
+            <a href=""
+              ><img src="./src/assets/icon/twitter_logo.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"
+    ></script>
+    <script src="./src/js/index.js"></script>
+    <script src="./src/js/result.js"></script>
+  </body>
+</html>

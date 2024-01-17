@@ -1,0 +1,89 @@
+// Typography function
+@mixin font-style($size, $weight, $height, $type: "heading") {
+    $sizes: (
+      xxl: 4.5rem,
+      xl: 3.75rem,
+      lg: 3rem,
+      md: 2.25rem,
+      sm: 1.875rem,
+      xs: 1.5rem,
+    );
+  
+    $weights: (
+      thin: 100,
+      light: 300,
+      regular: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      black: 900,
+    );
+  
+    $heights: (
+      xxl: 5.625rem,
+      xl: 4.5rem,
+      lg: 3.75,
+      md: 2.75rem,
+      sm: 2.375rem,
+      xs: 2rem,
+    );
+  
+    $spacing: (
+      xxl: -0.09rem,
+      xl: -0.075rem,
+      lg: -0.06rem,
+      md: -0.045rem,
+    );
+  
+    $size-font: $size;
+    $weight-font: $weight;
+    $height-font: $height;
+  
+    @if $type == "text" {
+      $sizes: (
+        xl: 1.25rem,
+        lg: 1.125rem,
+        md: 1rem,
+        sm: 0.875rem,
+        xs: 0.75rem,
+      );
+  
+      $heights: (
+        xl: 1.875rem,
+        lg: 1.75rem,
+        md: 1.5rem,
+        sm: 1.25rem,
+        xs: 1.125rem,
+      );
+    }
+  
+    @if $type == "heading" {
+      $spacing: (
+        xxl: -0.09rem,
+        xl: -0.075rem,
+        lg: -0.06rem,
+        md: -0.045rem,
+      );
+    }
+  
+    @if map-has-key($sizes, $size) {
+      $size-font: map-get($sizes, $size);
+    }
+    @if map-has-key($weights, $weight) {
+      $weight-font: map-get($weights, $weight);
+    }
+    @if map-has-key($heights, $height) {
+      $height-font: map-get($heights, $height);
+    }
+  
+    @if $type == "heading" {
+      @if map-has-key($spacing, $size) {
+        margin-bottom: map-get($spacing, $size);
+      }
+    }
+  
+    font-size: $size-font;
+    font-weight: $weight-font;
+    line-height: $height-font;
+  }
+  

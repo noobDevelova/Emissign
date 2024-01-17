@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emissign | Address</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="./src/assets/img/logo.svg" alt="logo" />
+          </div>
+
+          <div class="navigation">
+            <div class="navigation-container">
+              <div class="nav-list">
+                <a href="#" class="nav-item">Beranda</a>
+                <a href="#" class="nav-item">Kalkulator</a>
+                <a href="#" class="nav-item">Tentang Kami</a>
+              </div>
+              <div>
+                <a href="#" class="btn-primary">Kontak</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn-menu">
+            <div class="hamburger" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="input-field">
+      <div class="container">
+        <h1 class="section-header">Hitung dan Kurangi Emisi Anda!</h1>
+        <form id="myForm" class="form-container" onsubmit="getFormData(event)">
+          <label class="label-tujuan">Pilih Alamat Tujuan</label>
+          <div id="inputContainer">
+            <!-- Input field pertama -->
+            <div class="input-wrapper">
+              <input type="text" name="field1" required id="field1" />
+              <button type="button" onclick="addInput()">
+                <img src="./src/assets/icon/count_logo.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <!-- Tombol untuk menambah kolom input -->
+
+          <div class="input-asal">
+            <label for="">Pilih Alamat Asal</label>
+            <input type="text" name="alamat_asal" required id="alamat_asal" />
+          </div>
+          <input class="btn-secondary" type="submit" value="Konversi Rute" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <img src="./src/assets/img/logo.svg" alt="" />
+        <div class="footer-inner flex-reverse">
+          <p class="footer-text">
+            Menghitung Jejak Karbon akan membantu individu dan kelompok untuk
+            mengetahui seberapa besar produksi emisi karbon yang dihasilkan pada
+            satu waktu periode tertentu. Untuk melakukan perhitungan tersebut,
+            alat bantu seperti kalkulator Jejak Karbon diperlukan.
+          </p>
+          <div class="link-wrapper">
+            <a href=""><img src="./src/assets/icon/fb_logo.svg" alt="" /></a>
+            <a href=""><img src="./src/assets/icon/ig_logo.svg" alt="" /></a>
+            <a href=""
+              ><img src="./src/assets/icon/twitter_logo.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/formIndex.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
