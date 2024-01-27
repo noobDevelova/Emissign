@@ -14,6 +14,17 @@ footer {
     }
     .link-wrapper {
       align-self: flex-end;
+
+      .link-item {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 5px;
+
+        p {
+          color: $font-white;
+        }
+      }
     }
   }
 

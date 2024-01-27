@@ -77,7 +77,7 @@
 
 // SECTION DAMPAK
 #dampak {
-  padding-block: 3.75rem;
+  padding-block: 4rem;
 
   .section-container {
     display: flex;
@@ -103,55 +103,17 @@
       }
     }
 
-    .cards-container {
-      position: relative;
+    .box-wrapper {
+      border-radius: 1.875rem;
+      background-color: #f9fafb;
+      padding: 2.5rem 5.5rem;
       display: flex;
       flex-direction: column;
-      gap: 4rem;
+      gap: 1rem;
 
-      .flex-basis {
-        display: flex;
-        gap: 12.5rem;
-      }
-      .card {
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem;
-        background-color: #f9fafb;
-        padding: 1.88rem 2.12rem 1.88rem 2.19rem;
-        border-radius: 1.875rem;
-
-        .card-header {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 0.81rem;
-
-          .header-text {
-            color: #101828;
-            @include font-style(xl, bold, xl, "text");
-          }
-        }
-
-        .card-content > p {
-          color: #667085;
-          @include font-style(sm, medium, sm, "text");
-        }
-      }
-      .second {
-        grid-area: second;
-        height: 95%;
-      }
-      .fourth {
-        grid-area: fourth;
-        height: 95%;
-      }
-
-      .tree-branch {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      p {
+        @include font-style(md, medium, md, "text");
+        color: $font-gray;
       }
     }
   }

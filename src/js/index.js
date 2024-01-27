@@ -6,6 +6,8 @@ function toggleMenu() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  const sectionAbout = document.getElementById("dampak");
+  const linkBtn = document.getElementById("link-data");
   const radioButtons = document.querySelectorAll('input[type="radio"]');
   const submitButton = document.getElementById("nextBtn");
   let ron_data;
@@ -23,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
   submitButton.addEventListener("click", () => {
     let transport_data = {
       data: ron_data,
@@ -31,4 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     sessionStorage.setItem("transportData", JSON.stringify(transport_data));
     window.location.href = "../pages/adress.html";
   });
+
+  // linkBtn.addEventListener("click", () => {
+  //   window.location.hash = sectionAbout;
+  // });
 });
