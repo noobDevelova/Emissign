@@ -114,6 +114,7 @@
       p {
         @include font-style(md, medium, md, "text");
         color: $font-gray;
+        text-align: center;
       }
     }
   }

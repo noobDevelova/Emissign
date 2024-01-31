@@ -416,6 +416,7 @@ footer .flex-reverse {
   font-weight: 500;
   line-height: 1.5rem;
   color: #667085;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
